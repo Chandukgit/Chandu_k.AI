@@ -1,176 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="index.html" >
-    <title>chandu'ssite</title>
+    <title>Resume | Kiliveti Chandu</title>
 </head>
 <body>
-    <header  id="Home">
-   
-        <a href="#" class="logo" >Chandu<span>'s</span></a>
-     
-        <ul class="navlist" >
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="index.html">Services</a></li>
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="index.html">Contact me</a></li>
-
-        </ul>     
     
-   <div class="bx bx-menu" id="menu-icon"></div>
-  </header>
+    <!-- Header / Navigation -->
+    <header id="Home">
+        <a href="index.html" class="logo">Chandu<span>.ai</span></a>
+        
+        <ul class="navlist">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="index.html#service">Expertise</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#Pojects">Projects</a></li>
+          <li><a href="index.html#Contact">Contact Me</a></li>
+          <li><a href="resume.Html" class="active">Resume</a></li>
+        </ul>     
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
     <div class="container">
+        <!-- Sidebar with Photo & Downloads -->
         <div class="image_resume">
-            <img src="resumeimg.jpg" alt="image-loading" width="" height="">
+            <img src="resumeimg.jpg" alt="Kiliveti Chandu" width="200" height="200">
             <div class="resume-icons">
-                <a class="resume-btn" href="ChandukilivetiResume.pdf" target="_blank">Resume</a>
-                <a href="ChandukilivetiResume.pdf" id="download" download><i class='bx bxs-download' ></i></a>
-                <a href="Chanducv2.pdf"class="resume-btn">CV</a>
+                <a class="resume-btn" href="ChandukilivetiResume.pdf" target="_blank">View PDF</a>
+                <a href="ChandukilivetiResume.pdf" id="download" download><i class='bx bxs-download'></i></a>
             </div> 
         </div> 
+
+        <!-- Resume Sections Details -->
         <div class="resumesection">
-            <div class="contact">
-                <h2 onclick="displayContent(this)">Contact</h2>
+            
+            <!-- Contact Info -->
+            <div class="contact active">
+                <h2 onclick="displayContent(this)">Contact Information</h2>
                 <div class="wrapper">
-                    <span><i class='bx bx-phone'></i>+91 7337408918</span><br>
-                    <span href=""> <i class='bx bxl-gmail' ></i> chandukiliveti@gmail.com</span><br>
-                    <a href="https://www.linkedin.com/in/chandu-kiliveti- 058ba7244"><i class='bx bxl-linkedin-square' ></i>Linked in </a><br>
-                    <a href="https://github.com/Chandukgit"><i class='bx bxl-github' ></i>Git hub</a><br>
+                    <span><i class='bx bx-phone'></i> +91 7337408918</span><br>
+                    <span><i class='bx bxl-gmail'></i> chandukiliveti@gmail.com</span><br>
+                    <a href="https://www.linkedin.com/in/chandu-kiliveti-058ba7244" target="_blank"><i class='bx bxl-linkedin-square'></i> Linkedin Profile</a><br>
+                    <a href="https://github.com/Chandukgit" target="_blank"><i class='bx bxl-github'></i> GitHub profile</a><br>
                 </div>
             </div>
 
-            <div class="content">
+            <!-- Professional Summary -->
+            <div class="content active">
+                <h2 onclick="displayContent(this)">Professional Summary</h2>
+                <div class="wrapper">
+                    <p style="color: var(--text-secondary); font-weight: normal; font-size: 14.5px; margin-top: 0;">
+                        Generative AI Engineer & Python Full Stack Developer with 1.5+ years of experience developing AI-powered applications using Python, LLMs, LangChain, RAG, Prompt Engineering, RLHF, and SFT. Experienced in building intelligent agentic architectures, integrating API pipelines, optimizing models, developing scalable cloud-native backend systems on Azure, and building responsive user interfaces. Strong foundation in NLP, Machine Learning, and Full-Stack development.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="content active">
                 <h2 onclick="displayContent(this)">Education</h2>
                 <div class="wrapper">
-                <p>B.TECH INFORMATION TECHNOLOGY ( 2020 -2024 ) 83 %</p>
-                <span>Sri Venkateswara College Of Engineering Tirupati</span>
-                <p>SENIOR SECONDARY (XII) ( 2018 - 2020 ) 93 %</p>
-                <span>Sri Satyam Junior college Sullurupeta </span>
-                <p>SECONDARY SCHOOL (X) (2017-2018) 85% </p>
-                <span>Champion English Medium School Sullurupeta </span>
-                 </div>
-
-            </div>
-            <div class="skills">
-                <h2 onclick="displayContent(this)">Skills</h2>
-            <div class="wrapper">
-                 <div class="skillswrapper">
-
-                    <h3><i class='bx bx-code-alt' ></i>Programming Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>C++</li>
-                    </ul>
-                    <h3>FrontEnd Development</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>BootStrap</li>
-                        <li>Reactjs</li>
-                    </ul>
-                    <h3>BackEnd Development</h3>
-                    <ul>
-                        <li>PHP</li>
-                        <li>Django</li>
-                    </ul>
-                    <ul>
-                        <li>Django</li>
-                        <li>PHP</li>
-                    </ul>
+                    <p>B.TECH IN INFORMATION TECHNOLOGY (2020 - 2024) - GPA: 8.6</p>
+                    <span>Sri Venkateswara College of Engineering, Tirupati</span>
+                    
+                    <p>SENIOR SECONDARY (XII) (2018 - 2020) - 93%</p>
+                    <span>Sri Satyam Junior College, Sullurupeta</span>
+                    
+                    <p>SECONDARY SCHOOL (X) (2017 - 2018) - 85%</p>
+                    <span>Champion English Medium School, Sullurupeta</span>
                 </div>
-
             </div>
 
+            <!-- Skills -->
+            <div class="skills active">
+                <h2 onclick="displayContent(this)">Core Skills</h2>
+                <div class="wrapper">
+                     <div class="skillswrapper">
+                        <div>
+                            <h3><i class='bx bx-brain'></i> AI & Generative AI</h3>
+                            <ul>
+                                <li>Large Language Models (LLMs)</li>
+                                <li>Prompt Engineering & Reflection</li>
+                                <li>RAG Pipelines & Vector Search</li>
+                                <li>AI Agents & LangGraph</li>
+                                <li>RLHF & SFT Fine-tuning Pipelines</li>
+                                <li>LangChain framework</li>
+                            </ul>
+                            
+                            <h3><i class='bx bx-code-alt'></i> Programming</h3>
+                            <ul>
+                                <li>Python (Expert)</li>
+                                <li>Java</li>
+                                <li>C</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3><i class='bx bx-cog'></i> Full Stack & Backend</h3>
+                            <ul>
+                                <li>Python Full Stack Development</li>
+                                <li>FastAPI</li>
+                                <li>Django</li>
+                                <li>REST API Integration</li>
+                            </ul>
+                            
+                            <h3><i class='bx bx-data'></i> Databases & Tools</h3>
+                            <ul>
+                                <li>MySQL / SQL</li>
+                                <li>Git / GitHub</li>
+                                <li>Azure Cloud Services (App Service, Functions)</li>
+                                <li>VS Code / Jupyter Notebooks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-         <div class="project-container">
-                <h2 onclick="displayContent(this)">Projects</h2>
-               <div class="wrapper">
+
+            <!-- Work Experience -->
+            <div class="project-container active">
+                <h2 onclick="displayContent(this)">Professional Experience</h2>
+                <div class="wrapper">
+                    
                     <div class="projectcontent-wrapper">
-                        <h3 >Developed a LMS</h3>
+                        <h3>Generative AI Engineer | Turing (August 2024 - Present)</h3>
                         <ul>
-                            <li>The lms provides various programming languages tutorial for students</li>
-                            <li>Technical Quiz on programming languages</li>
-                            <li>Tech Blogs,Internship updates</li>
-                            <li><span>Technologies Used :</span> <p>Django,Html ,Css ,javascript ,python Beautifull Soup</p></li>
-                        </ul>
-                    </div>    
-                    <div class="projectcontent-wrapper">
-                        <h3>Developed a BikesWebsite</h3>
-    
-                        <ul>
-                            <li>Developed a Bikes web application user can find the
-                                Different types of bikes Hero,Honda ,Bajaj Companys</li>
-                            <li>Developed login management and web screapped
-                                the real time data of Honda , Hero and Bajaj Bikes</li>
-                            <li>Tech Blogs,Internship updates</li>
-                            <li><span>Technologies Used :</span> <p>Django,Html ,Css ,javascript ,python Beautifull Soup</p></li>
-                        </ul>
-                    </div>  
-                    <div class="projectcontent-wrapper">
-                        <ul>
-                            <li>Nike Branding page using React js</li>
-                            <li>   Zomato landing page clone using HTML and CSS</li>
-                            <li>Snake game using python</li>
-                            <li>Connect Four Game using Java</li>
+                            <li>Developed and optimized GenAI applications using Python, LLMs, LangChain, and vector stores to solve business problems.</li>
+                            <li>Engineered multi-agent systems using LangGraph (supervisor architecture) for automating user inquiries.</li>
+                            <li>Designed prompt engineering workflows, prompt templates, tool binding, and error correction layers.</li>
+                            <li>Implemented RAG systems enabling search and natural language Q&A across unstructured RFQ sheets and documents.</li>
+                            <li>Deployed production solutions on Azure (App Service, Function Apps, Key Vault, Blob Storage).</li>
+                            <li>Contributed to AI/LLM deliverables for global enterprise clients including Meta, Apple, and Amazon.</li>
                         </ul>
                     </div>
-               </div>
-           </div>
 
-           <div class="Internships">
-               <h2 onclick="displayContent(this)">Internships</h2>
-            <div class="wrapper">
-                <div class="Internship-wrapper">
-                    <h3>FRONT END DEVELOPMENT INTERN<br>(IBM- SKILLSBUILD)</h3>
-                    <p>( 5-6-2023) to (15-7-2023) </p>
-                    <ul>
-                        <li>Worked as a frontend developer</li>
-                        <li>Developed a Portfolio site and deployed in githubpages</li>
-                        <li><a href="https://chandukgit.github.i o/PersonalPortfoliowebpage/#">GitHub</li>
-                    </ul>
+                    <div class="projectcontent-wrapper">
+                        <h3>LLM Reviewer, Prompt Engineer & Trainer | Outlier (Freelance, Jan 2025 - June 2025)</h3>
+                        <ul>
+                            <li>Reviewed and rated model text/code generations for factual accuracy, formatting compliance, and alignment.</li>
+                            <li>Designed complex prompt templates to test model capabilities, reasoning pipelines, and edge cases.</li>
+                            <li>Submitted feedback data supporting Supervised Fine-Tuning (SFT) and RLHF workflows.</li>
+                        </ul>
+                    </div>
+
+                    <div class="projectcontent-wrapper">
+                        <h3>Computer Science Subject Matter Expert | Chegg (Freelance)</h3>
+                        <ul>
+                            <li>Delivered code and data structures solutions and written guidance for learners worldwide.</li>
+                        </ul>
+                    </div>
+
                 </div>
-    
-                <!-- <div class="Internship-wrapper">
-                   <h3>WEB DEVELOPMENT FULL STACK ( Reactjs ) -APSSDC</h3>
-                   <p>( 4-01-2023 ) to ( 3-02- 2023 )</p>
-                   <ul>
-                    <li>Worked as a react intern </li>
-                    <li>Developed a library management System</li>
-                    <li>Developed a online Resume Builder</li>
-                   </ul>
-                </div> -->
-
             </div>
 
-           </div>
+            <!-- Projects -->
+            <div class="project-container active">
+                <h2 onclick="displayContent(this)">Projects Showcase</h2>
+                <div class="wrapper">
+                    
+                    <div class="projectcontent-wrapper">
+                        <h3>AI-Powered Coding Mentor</h3>
+                        <ul>
+                            <li>Developed full-stack AI coding assistant using FastAPI, LangChain, and OpenAI APIs for real-time guidance.</li>
+                            <li>Implemented prompts for code quality analysis, complexity, and bug fixing.</li>
+                            <li><span>Tech Stack:</span> <p>FastAPI, LangChain, Python, OpenAI API</p></li>
+                        </ul>
+                    </div>    
 
+                    <div class="projectcontent-wrapper">
+                        <h3>Multi-Page PDF Conversational Search Engine (RAG)</h3>
+                        <ul>
+                            <li>Privacy-focused vector search platform that allows users to upload PDFs and query them in natural language.</li>
+                            <li>Implements source citations and hallucination guardrails.</li>
+                            <li><span>Tech Stack:</span> <p>Python, OpenAI Embeddings, Vector Databases, Streamlit/HTML</p></li>
+                        </ul>
+                    </div>  
 
-           <!-- <div class="Certifications-container">
-            
-            <h2>Achievements</h2>
-             <div class="wrapper">
-                <div class="Certifications-wrapper">
-                    <ul>
-                        <li>Python for Datascience Certified <span>-( NPTEL )</span></li>
-                        <li>TCSION Carrer Edge Young Professional<span> ( -TCS ) </span></li>
-                        <li>The Complete Web Developer <span>-( Infosys Spring Board )</span></li>
-                    </ul>
-                </div>    
-             </div>
-        </div> -->
+                    <div class="projectcontent-wrapper">
+                        <h3>Resume Intelligence Assistant</h3>
+                        <ul>
+                            <li>Semantic candidate ranking search engine designed for recruiting departments.</li>
+                            <li>Parses multiple resumes, matches query intent, and returns candidate lists with reasoning.</li>
+                            <li><span>Tech Stack:</span> <p>Python, Semantic Similarity Search, LLMs</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="projectcontent-wrapper">
+                        <h3>Bikes Web Application</h3>
+                        <ul>
+                            <li>Listing app parsing Hero, Honda, and Bajaj bikes listings using Beautiful Soup scraping.</li>
+                            <li>Features session authentication and database catalog updates.</li>
+                            <li><span>Tech Stack:</span> <p>Python, Django, BeautifulSoup, MySQL, CSS</p></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
+    
     <script type="text/javascript" src="script.js"></script>
 </body>
-
-
+</html>
