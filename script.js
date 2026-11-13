@@ -59,7 +59,7 @@ window.addEventListener("scroll", () => {
 // --- TYPEWRITER EFFECT IN HERO SECTION ---
 const typingTextElement = document.getElementById("typing-text");
 if (typingTextElement) {
-  const phrases = ["AI Agents", "Python Full Stack", "RAG Pipelines", "SFT/RLHF Systems", "FastAPI Backends", "Intelligent Solutions"];
+  const phrases = ["AI Agents", "Enterprise RAG", "Agentic AI Evaluation", "RLHF & SFT Systems", "FastAPI Backends", "Python Architecture"];
   let phraseIndex = 0;
   let charIndex = 0;
   let isDeleting = false;

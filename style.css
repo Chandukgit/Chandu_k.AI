@@ -257,7 +257,8 @@ section {
 .buttons {
   display: flex;
   align-items: center;
-  gap: 25px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .sayhello {
@@ -279,6 +280,34 @@ section {
   color: #fff;
   font-weight: 600;
   font-size: 15px;
+}
+
+.btn-resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.btn-resume:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.25);
+}
+
+.btn-resume i {
+  font-size: 18px;
+  color: var(--primary-color);
 }
 
 .watch {
@@ -878,6 +907,32 @@ section {
   margin-bottom: 12px;
 }
 
+.project-badge-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.project-badge-top.enterprise {
+  background: rgba(99, 102, 241, 0.15);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.35);
+}
+
+.project-badge-top.personal {
+  background: rgba(16, 185, 129, 0.15);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
 .project-tags span {
   font-size: 11px;
   font-weight: 600;
@@ -902,6 +957,32 @@ section {
   line-height: 1.6;
   margin-bottom: 15px;
   flex-grow: 1;
+}
+
+.project-contributions {
+  list-style: none;
+  margin: 10px 0 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-contributions li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding-left: 18px;
+  position: relative;
+}
+
+.project-contributions li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: var(--primary-color);
+  font-size: 9px;
 }
 
 .project-footer {
@@ -930,6 +1011,127 @@ section {
 
 .project-git-link:hover {
   color: var(--primary-color);
+}
+
+.project-links-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-live-link {
+  font-size: 13px;
+  color: #34d399;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition-fast);
+}
+
+.project-live-link:hover {
+  color: #6ee7b7;
+  transform: translateY(-1px);
+}
+
+.project-confidential {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.project-confidential i {
+  color: var(--primary-color);
+  font-size: 15px;
+}
+
+/* Skills Section */
+.skills-section {
+  background: #050914;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-color-hover);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.35);
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.skill-card:hover .skill-card-icon {
+  background: var(--gradient-primary);
+  color: #fff;
+}
+
+.skill-card h4 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.skill-badges-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-badges-flow span {
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: var(--transition-fast);
+}
+
+.skill-badges-flow span:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+  transform: translateY(-2px);
 }
 
 /* Contact Section */
